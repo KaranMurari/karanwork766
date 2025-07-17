@@ -132,10 +132,14 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-5 sm:bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button onClick={() => scrollToSection("about")} className="flex flex-col items-center space-y-1 sm:space-y-2 text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110">
-          <span className="text-xs sm:text-sm">Scroll to explore</span>
-          <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5" />
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button 
+          onClick={() => scrollToSection("about")} 
+          className="flex flex-col items-center space-y-2 text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent/20"
+          aria-label="Scroll to About section"
+        >
+          <span className="text-sm font-medium">Scroll to explore</span>
+          <ChevronDown className="h-5 w-5" />
         </button>
       </div>
     </section>;
