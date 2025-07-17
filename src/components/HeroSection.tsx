@@ -20,47 +20,91 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center space-y-8 animate-fade-in">
-          {/* Profile Picture */}
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/b4d8101d-1d1e-43fb-962f-9c76892563ee.png" 
-              alt="Karan Murari Profile Picture" 
-              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full object-cover border-4 border-accent/20 shadow-glow"
-            />
+        <div className="animate-fade-in">
+          {/* Mobile Layout - Stacked */}
+          <div className="lg:hidden text-center space-y-6">
+            {/* Profile Picture */}
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/b4d8101d-1d1e-43fb-962f-9c76892563ee.png" 
+                alt="Karan Murari Profile Picture" 
+                className="w-48 h-48 max-w-[70vw] rounded-full object-cover border-4 border-accent/20 shadow-glow"
+              />
+            </div>
+
+            {/* Intro and Main Headline */}
+            <div className="space-y-3">
+              <p className="text-base text-muted-foreground">Hi, I'm</p>
+              <h1 className="text-4xl font-bold leading-tight">
+                <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                  Karan Murari
+                </span>
+              </h1>
+              <h2 className="text-xl font-semibold text-foreground/90 leading-relaxed">
+                Web Developer Empowered by AI & Automation
+              </h2>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Crafting smart, efficient digital experiences with code and intelligence.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col gap-3 pt-4">
+              <Button onClick={() => scrollToSection("projects")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-cyber transition-all duration-300">
+                View Projects
+              </Button>
+              <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300" asChild>
+                <a href="https://drive.google.com/file/d/1mjZidAq8mQhhdwR5OHAt_YP9qT5ILnVC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
+            </div>
           </div>
 
-          {/* Intro and Main Headline */}
-          <div className="space-y-6">
-            <p className="text-lg sm:text-xl text-muted-foreground">Hi, I'm</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
-              <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-                Karan Murari
-              </span>
-            </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-4xl font-semibold text-foreground/90 max-w-4xl mx-auto leading-relaxed">
-              Web Developer Empowered by AI & Automation
-            </h2>
-            <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Crafting smart, efficient digital experiences with code and intelligence.
-            </p>
-          </div>
+          {/* Desktop Layout - Side by Side */}
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            {/* Left Column - Text Content */}
+            <div className="space-y-4">
+              <p className="text-xl text-muted-foreground">Hi, I'm</p>
+              <h1 className="text-5xl font-bold leading-tight">
+                <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                  Karan Murari
+                </span>
+              </h1>
+              <h2 className="text-2xl font-semibold text-foreground/90 leading-relaxed">
+                Web Developer Empowered by AI & Automation
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Crafting smart, efficient digital experiences with code and intelligence.
+              </p>
+              
+              {/* CTA Buttons */}
+              <div className="flex gap-4 pt-4">
+                <Button onClick={() => scrollToSection("projects")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-cyber transition-all duration-300">
+                  View Projects
+                </Button>
+                <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300" asChild>
+                  <a href="https://drive.google.com/file/d/1mjZidAq8mQhhdwR5OHAt_YP9qT5ILnVC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Resume
+                  </a>
+                </Button>
+              </div>
+            </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button onClick={() => scrollToSection("projects")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-cyber transition-all duration-300">
-              View Projects
-            </Button>
-            <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300" asChild>
-              <a href="https://drive.google.com/file/d/1mjZidAq8mQhhdwR5OHAt_YP9qT5ILnVC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </a>
-            </Button>
+            {/* Right Column - Profile Picture */}
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/b4d8101d-1d1e-43fb-962f-9c76892563ee.png" 
+                alt="Karan Murari Profile Picture" 
+                className="w-80 h-80 rounded-full object-cover border-4 border-accent/20 shadow-glow"
+              />
+            </div>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-4">
+          <div className="flex justify-center space-x-4 pt-8">
             <Button variant="ghost" size="icon" asChild className="hover:text-accent hover:bg-accent/10 transition-all duration-300 hover:scale-110">
               <a href="https://www.linkedin.com/in/karan-murari-576717210" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <Linkedin className="h-5 w-5" />
