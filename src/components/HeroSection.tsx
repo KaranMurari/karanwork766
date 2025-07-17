@@ -21,8 +21,18 @@ const HeroSection = () => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8 animate-fade-in">
-          {/* Main Headline */}
+          {/* Profile Picture */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/b4d8101d-1d1e-43fb-962f-9c76892563ee.png" 
+              alt="Karan Murari Profile Picture" 
+              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full object-cover border-4 border-accent/20 shadow-glow"
+            />
+          </div>
+
+          {/* Intro and Main Headline */}
           <div className="space-y-6">
+            <p className="text-lg sm:text-xl text-muted-foreground">Hi, I'm</p>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
                 Karan Murari
