@@ -45,13 +45,18 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center space-x-3 cursor-pointer group" onClick={() => scrollToSection('home')}>
             <img 
-              src="/lovable-uploads/0c250322-ccc9-48db-8e25-b26f0d6fa481.png" 
-              alt="Karan Murari Logo - Web Developer" 
-              className="h-12 w-auto max-h-[60px] object-contain cursor-pointer hover:opacity-80 transition-opacity duration-200"
-              onClick={() => scrollToSection('home')}
+              src="/lovable-uploads/8b125a4e-9b50-4ef8-8d6f-296352eac88d.png" 
+              alt="KML Logo - Karan Murari" 
+              className="h-10 w-10 sm:h-12 sm:w-12 object-contain group-hover:opacity-80 transition-opacity duration-200"
             />
+            <span className="hidden sm:block text-xl lg:text-2xl font-bold text-foreground group-hover:text-accent transition-colors duration-200">
+              Karan Murari
+            </span>
+            <span className="block sm:hidden text-lg font-bold text-foreground group-hover:text-accent transition-colors duration-200">
+              Karan Murari
+            </span>
           </div>
 
           {/* Desktop Navigation */}
