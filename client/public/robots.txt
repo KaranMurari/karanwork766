@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://karanmurari.in/sitemap.xml
