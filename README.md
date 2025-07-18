@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# Karan Murari - Portfolio Website
 
-## Project info
+A modern, responsive personal portfolio website showcasing web development expertise, built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/5bf5a8c2-4035-4560-9151-6defdcd41aa0
+## 🚀 Live Demo
+Visit: [karanmurari.in](https://karanmurari.in)
 
-## How can I edit this code?
+## 🛠️ Tech Stack
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI primitives
+- **Routing**: Wouter
+- **Forms**: React Hook Form + Zod validation
+- **Email**: EmailJS
+- **Analytics**: Google Analytics
+- **Deployment**: Vercel
 
-There are several ways of editing your application.
+## 📋 Features
+- Responsive design for all devices
+- Modern UI with smooth animations
+- Dark theme with custom gradients
+- Contact form with email integration
+- SEO optimized (meta tags, schema markup, sitemap)
+- Google Analytics tracking
+- Performance optimized
 
-**Use Lovable**
+## 🚀 Quick Start
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5bf5a8c2-4035-4560-9151-6defdcd41aa0) and start prompting.
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-**Use your preferred IDE**
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📁 Project Structure
+```
+src/
+├── components/          # React components
+│   ├── ui/             # Reusable UI components
+│   ├── HeroSection.tsx
+│   ├── AboutSection.tsx
+│   ├── ProjectsSection.tsx
+│   └── ...
+├── pages/              # Page components
+├── lib/                # Utilities and configurations
+├── hooks/              # Custom React hooks
+└── main.tsx           # App entry point
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Configuration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Environment Variables
+Create a `.env` file in the root directory:
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-**Use GitHub Codespaces**
+### SEO Configuration
+Update the following files for your domain:
+- `index.html` - Meta tags and schema markup
+- `public/sitemap.xml` - Sitemap URLs
+- `public/robots.txt` - Robots directives
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📊 Analytics
+Google Analytics is integrated with ID: `G-5VWXCTMN8L`
 
-## What technologies are used for this project?
+## 🌐 Deployment on Vercel
 
-This project is built with:
+1. **Push code to GitHub**
+2. **Connect to Vercel**
+3. **Configure build settings**:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Install Command: `npm install`
+4. **Deploy**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The `vercel.json` file is configured for SPA routing.
 
-## How can I deploy this project?
+## 📝 License
+MIT License - feel free to use this code for your own portfolio!
 
-Simply open [Lovable](https://lovable.dev/projects/5bf5a8c2-4035-4560-9151-6defdcd41aa0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🤝 Contact
+- **Email**: karanmurari766@gmail.com
+- **LinkedIn**: [linkedin.com/in/karanmurari](https://linkedin.com/in/karanmurari)
+- **GitHub**: [github.com/KaranMurari](https://github.com/KaranMurari)
